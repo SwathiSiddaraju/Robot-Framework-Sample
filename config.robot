@@ -5,31 +5,31 @@ Documentation     A resource file with reusable keywords and variables.
 ...               domain specific language. They utilize keywords provided
 ...               by the imported SeleniumLibrary.
 Library           SeleniumLibrary
-Resource          Login_page.robot
-#Resource            Invalid_login.robot
-
+Resource          Invalid_login.robot
+Resource            Login_page.robot
 
 *** Test Cases ***
 
-LoginTest
-    Open Browser to the Login Page
-    Enter User Name
-    Click Next
+Invalid_logintest
+    Invalid_login.Open Browser to the Login_Page
+    Invalid_login.Enter User Name
+    Invalid_login.Click Next
     sleep    ${Delay}
-    Enter Password
-    Click Login
+    Invalid_login.Enter Password
+    Invalid_login.Click Login
     sleep    ${Delay}
-    log to console        The text is ${response}
 #    Assert Error Message
-    [Teardown]   Close Browser
+    [Teardown]   Invalid_login.Close Browser
 
-Invalid_login
-    Open Browser to the Login Page
-    Enter User Name
-    Click Next
+LoginTest
+    Login_page.Open Browser to the Login Page
+    Login_page.Enter User Name
+    Login_page.Click Next
     sleep    ${Delay}
-    Enter Password
-    Click Login
+    Login_page.Enter Password
+    Login_page.Click Login
     sleep    ${Delay}
+#    log to console        The text is ${response1}
 #    Assert Error Message
-    [Teardown]   Close Browser
+    [Teardown]   Login_page.Close Browser
+
