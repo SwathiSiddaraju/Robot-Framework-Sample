@@ -1,12 +1,11 @@
 *** Settings ***
-Documentation     A test suite with a single test for valid login.
+Documentation     A resource file with reusable keywords and variables.
 ...
-...               This test has a workflow that is created using keywords in
-...               the imported resource file.
+...               The system specific keywords created here form our own
+...               domain specific language. They utilize keywords provided
+...               by the imported SeleniumLibrary.
 
 
-
-*** Settings ***
 Library           SeleniumLibrary
 
 *** Variables ***
@@ -44,5 +43,4 @@ Close Browser
     Close All Browsers
 
 
-#    ${response}    Get Text    xpath=/html/body/div/tr[2]/td/strong
-# Should Be Equal As Strings    ${response}    Payment was successful
+

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 3.1.1 (Python 3.6.5 on win32)" generated="20190513 14:48:56.330" rpa="false">
+<robot generator="Robot 3.1.1 (Python 3.6.5 on win32)" generated="20190513 14:57:12.338" rpa="false">
 <suite id="s1" name="Config" source="C:\Users\Swathi S\PycharmProjects\Robot_2\config.robot">
 <test id="s1-t1" name="Invalid_logintest">
 <kw name="Open Browser to the Login_Page" library="Invalid_login">
@@ -9,14 +9,14 @@
 <arg>${SiteUrl}</arg>
 <arg>${Browser}</arg>
 </arguments>
-<msg timestamp="20190513 14:48:56.740" level="INFO">Opening browser 'Chrome' to base url 'https://accounts.google.com/signin'.</msg>
-<status status="PASS" starttime="20190513 14:48:56.739" endtime="20190513 14:49:13.324"></status>
+<msg timestamp="20190513 14:57:12.782" level="INFO">Opening browser 'Chrome' to base url 'https://accounts.google.com/signin'.</msg>
+<status status="PASS" starttime="20190513 14:57:12.781" endtime="20190513 14:57:33.100"></status>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20190513 14:49:13.324" endtime="20190513 14:49:14.459"></status>
+<status status="PASS" starttime="20190513 14:57:33.100" endtime="20190513 14:57:34.219"></status>
 </kw>
-<status status="PASS" starttime="20190513 14:48:56.739" endtime="20190513 14:49:14.460"></status>
+<status status="PASS" starttime="20190513 14:57:12.781" endtime="20190513 14:57:34.220"></status>
 </kw>
 <kw name="Enter User Name" library="Invalid_login">
 <kw name="Input Text" library="SeleniumLibrary">
@@ -25,10 +25,10 @@
 <arg>id=identifierId</arg>
 <arg>${Username1}</arg>
 </arguments>
-<msg timestamp="20190513 14:49:14.461" level="INFO">Typing text 'robotframework.tyss@gmail.com' into text field 'id=identifierId'.</msg>
-<status status="PASS" starttime="20190513 14:49:14.461" endtime="20190513 14:49:14.777"></status>
+<msg timestamp="20190513 14:57:34.221" level="INFO">Typing text 'robotframework.tyss@gmail.com' into text field 'id=identifierId'.</msg>
+<status status="PASS" starttime="20190513 14:57:34.221" endtime="20190513 14:57:34.611"></status>
 </kw>
-<status status="PASS" starttime="20190513 14:49:14.460" endtime="20190513 14:49:14.778"></status>
+<status status="PASS" starttime="20190513 14:57:34.220" endtime="20190513 14:57:34.611"></status>
 </kw>
 <kw name="Click Next" library="Invalid_login">
 <kw name="Click Element" library="SeleniumLibrary">
@@ -36,18 +36,18 @@
 <arguments>
 <arg>xpath=//div[@role = 'button' and @id='identifierNext']</arg>
 </arguments>
-<msg timestamp="20190513 14:49:14.778" level="INFO">Clicking element 'xpath=//div[@role = 'button' and @id='identifierNext']'.</msg>
-<status status="PASS" starttime="20190513 14:49:14.778" endtime="20190513 14:49:15.055"></status>
+<msg timestamp="20190513 14:57:34.612" level="INFO">Clicking element 'xpath=//div[@role = 'button' and @id='identifierNext']'.</msg>
+<status status="PASS" starttime="20190513 14:57:34.612" endtime="20190513 14:57:35.042"></status>
 </kw>
-<status status="PASS" starttime="20190513 14:49:14.778" endtime="20190513 14:49:15.055"></status>
+<status status="PASS" starttime="20190513 14:57:34.611" endtime="20190513 14:57:35.042"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>${Delay}</arg>
 </arguments>
-<msg timestamp="20190513 14:49:20.057" level="INFO">Slept 5 seconds</msg>
-<status status="PASS" starttime="20190513 14:49:15.056" endtime="20190513 14:49:20.057"></status>
+<msg timestamp="20190513 14:57:40.043" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20190513 14:57:35.043" endtime="20190513 14:57:40.043"></status>
 </kw>
 <kw name="Enter Password" library="Invalid_login">
 <kw name="Input Password" library="SeleniumLibrary">
@@ -56,10 +56,10 @@
 <arg>xpath=//div[@id='password']//input[@type='password']</arg>
 <arg>${Password1}</arg>
 </arguments>
-<msg timestamp="20190513 14:49:20.061" level="INFO">Typing password into text field 'xpath=//div[@id='password']//input[@type='password']'.</msg>
-<status status="PASS" starttime="20190513 14:49:20.060" endtime="20190513 14:49:20.200"></status>
+<msg timestamp="20190513 14:57:40.047" level="INFO">Typing password into text field 'xpath=//div[@id='password']//input[@type='password']'.</msg>
+<status status="PASS" starttime="20190513 14:57:40.046" endtime="20190513 14:57:40.186"></status>
 </kw>
-<status status="PASS" starttime="20190513 14:49:20.059" endtime="20190513 14:49:20.200"></status>
+<status status="PASS" starttime="20190513 14:57:40.045" endtime="20190513 14:57:40.186"></status>
 </kw>
 <kw name="Click Login" library="Invalid_login">
 <kw name="Click Element" library="SeleniumLibrary">
@@ -67,27 +67,27 @@
 <arguments>
 <arg>id=passwordNext</arg>
 </arguments>
-<msg timestamp="20190513 14:49:20.201" level="INFO">Clicking element 'id=passwordNext'.</msg>
-<status status="PASS" starttime="20190513 14:49:20.201" endtime="20190513 14:49:20.325"></status>
+<msg timestamp="20190513 14:57:40.187" level="INFO">Clicking element 'id=passwordNext'.</msg>
+<status status="PASS" starttime="20190513 14:57:40.187" endtime="20190513 14:57:40.301"></status>
 </kw>
-<status status="PASS" starttime="20190513 14:49:20.201" endtime="20190513 14:49:20.326"></status>
+<status status="PASS" starttime="20190513 14:57:40.186" endtime="20190513 14:57:40.301"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>${Delay}</arg>
 </arguments>
-<msg timestamp="20190513 14:49:25.327" level="INFO">Slept 5 seconds</msg>
-<status status="PASS" starttime="20190513 14:49:20.326" endtime="20190513 14:49:25.327"></status>
+<msg timestamp="20190513 14:57:45.303" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20190513 14:57:40.302" endtime="20190513 14:57:45.303"></status>
 </kw>
 <kw name="Close Browser" library="Invalid_login" type="teardown">
 <kw name="Close All Browsers" library="SeleniumLibrary">
 <doc>Closes all open browsers and resets the browser cache.</doc>
-<status status="PASS" starttime="20190513 14:49:25.327" endtime="20190513 14:49:27.902"></status>
+<status status="PASS" starttime="20190513 14:57:45.306" endtime="20190513 14:57:47.913"></status>
 </kw>
-<status status="PASS" starttime="20190513 14:49:25.327" endtime="20190513 14:49:27.902"></status>
+<status status="PASS" starttime="20190513 14:57:45.305" endtime="20190513 14:57:47.913"></status>
 </kw>
-<status status="PASS" starttime="20190513 14:48:56.738" endtime="20190513 14:49:27.903" critical="yes"></status>
+<status status="PASS" starttime="20190513 14:57:12.780" endtime="20190513 14:57:47.914" critical="yes"></status>
 </test>
 <test id="s1-t2" name="LoginTest">
 <kw name="Open Browser to the Login Page" library="Login_page">
@@ -97,14 +97,14 @@
 <arg>${SiteUrl}</arg>
 <arg>${Browser}</arg>
 </arguments>
-<msg timestamp="20190513 14:49:27.915" level="INFO">Opening browser 'Chrome' to base url 'https://accounts.google.com/signin'.</msg>
-<status status="PASS" starttime="20190513 14:49:27.914" endtime="20190513 14:49:44.295"></status>
+<msg timestamp="20190513 14:57:47.926" level="INFO">Opening browser 'Chrome' to base url 'https://accounts.google.com/signin'.</msg>
+<status status="PASS" starttime="20190513 14:57:47.925" endtime="20190513 14:58:03.421"></status>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20190513 14:49:44.295" endtime="20190513 14:49:45.431"></status>
+<status status="PASS" starttime="20190513 14:58:03.421" endtime="20190513 14:58:04.558"></status>
 </kw>
-<status status="PASS" starttime="20190513 14:49:27.912" endtime="20190513 14:49:45.432"></status>
+<status status="PASS" starttime="20190513 14:57:47.923" endtime="20190513 14:58:04.559"></status>
 </kw>
 <kw name="Enter User Name" library="Login_page">
 <kw name="Input Text" library="SeleniumLibrary">
@@ -113,10 +113,10 @@
 <arg>id=identifierId</arg>
 <arg>${Username}</arg>
 </arguments>
-<msg timestamp="20190513 14:49:45.433" level="INFO">Typing text 'robotframework.tyss@gmail.com' into text field 'id=identifierId'.</msg>
-<status status="PASS" starttime="20190513 14:49:45.432" endtime="20190513 14:49:45.766"></status>
+<msg timestamp="20190513 14:58:04.560" level="INFO">Typing text 'robotframework.tyss@gmail.com' into text field 'id=identifierId'.</msg>
+<status status="PASS" starttime="20190513 14:58:04.560" endtime="20190513 14:58:04.858"></status>
 </kw>
-<status status="PASS" starttime="20190513 14:49:45.432" endtime="20190513 14:49:45.766"></status>
+<status status="PASS" starttime="20190513 14:58:04.559" endtime="20190513 14:58:04.858"></status>
 </kw>
 <kw name="Click Next" library="Login_page">
 <kw name="Click Element" library="SeleniumLibrary">
@@ -124,18 +124,18 @@
 <arguments>
 <arg>xpath=//div[@role = 'button' and @id='identifierNext']</arg>
 </arguments>
-<msg timestamp="20190513 14:49:45.768" level="INFO">Clicking element 'xpath=//div[@role = 'button' and @id='identifierNext']'.</msg>
-<status status="PASS" starttime="20190513 14:49:45.767" endtime="20190513 14:49:46.081"></status>
+<msg timestamp="20190513 14:58:04.859" level="INFO">Clicking element 'xpath=//div[@role = 'button' and @id='identifierNext']'.</msg>
+<status status="PASS" starttime="20190513 14:58:04.859" endtime="20190513 14:58:04.976"></status>
 </kw>
-<status status="PASS" starttime="20190513 14:49:45.767" endtime="20190513 14:49:46.081"></status>
+<status status="PASS" starttime="20190513 14:58:04.859" endtime="20190513 14:58:04.976"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>${Delay}</arg>
 </arguments>
-<msg timestamp="20190513 14:49:51.082" level="INFO">Slept 5 seconds</msg>
-<status status="PASS" starttime="20190513 14:49:46.082" endtime="20190513 14:49:51.082"></status>
+<msg timestamp="20190513 14:58:09.979" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20190513 14:58:04.977" endtime="20190513 14:58:09.979"></status>
 </kw>
 <kw name="Enter Password" library="Login_page">
 <kw name="Input Password" library="SeleniumLibrary">
@@ -144,10 +144,10 @@
 <arg>xpath=//div[@id='password']//input[@type='password']</arg>
 <arg>${Password}</arg>
 </arguments>
-<msg timestamp="20190513 14:49:51.086" level="INFO">Typing password into text field 'xpath=//div[@id='password']//input[@type='password']'.</msg>
-<status status="PASS" starttime="20190513 14:49:51.085" endtime="20190513 14:49:51.288"></status>
+<msg timestamp="20190513 14:58:09.983" level="INFO">Typing password into text field 'xpath=//div[@id='password']//input[@type='password']'.</msg>
+<status status="PASS" starttime="20190513 14:58:09.982" endtime="20190513 14:58:10.194"></status>
 </kw>
-<status status="PASS" starttime="20190513 14:49:51.084" endtime="20190513 14:49:51.288"></status>
+<status status="PASS" starttime="20190513 14:58:09.981" endtime="20190513 14:58:10.194"></status>
 </kw>
 <kw name="Click Login" library="Login_page">
 <kw name="Click Element" library="SeleniumLibrary">
@@ -155,34 +155,33 @@
 <arguments>
 <arg>id=passwordNext</arg>
 </arguments>
-<msg timestamp="20190513 14:49:51.289" level="INFO">Clicking element 'id=passwordNext'.</msg>
-<status status="PASS" starttime="20190513 14:49:51.289" endtime="20190513 14:49:51.390"></status>
+<msg timestamp="20190513 14:58:10.195" level="INFO">Clicking element 'id=passwordNext'.</msg>
+<status status="PASS" starttime="20190513 14:58:10.195" endtime="20190513 14:58:10.323"></status>
 </kw>
-<status status="PASS" starttime="20190513 14:49:51.289" endtime="20190513 14:49:51.390"></status>
+<status status="PASS" starttime="20190513 14:58:10.194" endtime="20190513 14:58:10.323"></status>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <doc>Pauses the test executed for the given time.</doc>
 <arguments>
 <arg>${Delay}</arg>
 </arguments>
-<msg timestamp="20190513 14:49:56.393" level="INFO">Slept 5 seconds</msg>
-<status status="PASS" starttime="20190513 14:49:51.391" endtime="20190513 14:49:56.393"></status>
+<msg timestamp="20190513 14:58:15.327" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20190513 14:58:10.324" endtime="20190513 14:58:15.327"></status>
 </kw>
 <kw name="Close Browser" library="Login_page" type="teardown">
 <kw name="Close All Browsers" library="SeleniumLibrary">
 <doc>Closes all open browsers and resets the browser cache.</doc>
-<status status="PASS" starttime="20190513 14:49:56.394" endtime="20190513 14:49:58.933"></status>
+<status status="PASS" starttime="20190513 14:58:15.329" endtime="20190513 14:58:17.938"></status>
 </kw>
-<status status="PASS" starttime="20190513 14:49:56.394" endtime="20190513 14:49:58.933"></status>
+<status status="PASS" starttime="20190513 14:58:15.328" endtime="20190513 14:58:17.938"></status>
 </kw>
-<status status="PASS" starttime="20190513 14:49:27.909" endtime="20190513 14:49:58.934" critical="yes"></status>
+<status status="PASS" starttime="20190513 14:57:47.920" endtime="20190513 14:58:17.939" critical="yes"></status>
 </test>
-<doc>A resource file with reusable keywords and variables.
+<doc>A test suite with a two test for valid &amp; invalid login.
 
-The system specific keywords created here form our own
-domain specific language. They utilize keywords provided
-by the imported SeleniumLibrary.</doc>
-<status status="PASS" starttime="20190513 14:48:56.335" endtime="20190513 14:49:58.939"></status>
+This test has a workflow that is created using keywords in
+the imported resource file.</doc>
+<status status="PASS" starttime="20190513 14:57:12.342" endtime="20190513 14:58:17.949"></status>
 </suite>
 <statistics>
 <total>

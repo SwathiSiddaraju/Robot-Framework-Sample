@@ -1,9 +1,9 @@
 *** Settings ***
-Documentation     A resource file with reusable keywords and variables.
+Documentation     A test suite with a two test for valid & invalid login.
 ...
-...               The system specific keywords created here form our own
-...               domain specific language. They utilize keywords provided
-...               by the imported SeleniumLibrary.
+...               This test has a workflow that is created using keywords in
+...               the imported resource file.
+
 Library           SeleniumLibrary
 Resource          Invalid_login.robot
 Resource            Login_page.robot
