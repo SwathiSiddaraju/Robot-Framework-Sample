@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.1.1 (Python 3.6.5 on win32)" generated="20190513 13:02:55.492" rpa="false">
+<suite id="s1" name="Config" source="C:\Users\Swathi S\PycharmProjects\Robot_2\config.robot">
+<test id="s1-t1" name="LoginTest">
+<kw name="Open Browser to the Login Page" library="Login_page">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>${SiteUrl}</arg>
+<arg>${Browser}</arg>
+</arguments>
+<msg timestamp="20190513 13:02:55.844" level="INFO">Opening browser 'Chrome' to base url 'https://accounts.google.com/signin'.</msg>
+<status status="PASS" starttime="20190513 13:02:55.844" endtime="20190513 13:03:19.367"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20190513 13:03:19.367" endtime="20190513 13:03:20.497"></status>
+</kw>
+<status status="PASS" starttime="20190513 13:02:55.844" endtime="20190513 13:03:20.498"></status>
+</kw>
+<kw name="Enter User Name" library="Login_page">
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=identifierId</arg>
+<arg>${Username}</arg>
+</arguments>
+<msg timestamp="20190513 13:03:20.499" level="INFO">Typing text 'robotframework.tyss@gmail.com' into text field 'id=identifierId'.</msg>
+<status status="PASS" starttime="20190513 13:03:20.498" endtime="20190513 13:03:20.904"></status>
+</kw>
+<status status="PASS" starttime="20190513 13:03:20.498" endtime="20190513 13:03:20.904"></status>
+</kw>
+<kw name="Click Next" library="Login_page">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//div[@role = 'button' and @id='identifierNext']</arg>
+</arguments>
+<msg timestamp="20190513 13:03:20.905" level="INFO">Clicking element 'xpath=//div[@role = 'button' and @id='identifierNext']'.</msg>
+<status status="PASS" starttime="20190513 13:03:20.905" endtime="20190513 13:03:22.001"></status>
+</kw>
+<status status="PASS" starttime="20190513 13:03:20.905" endtime="20190513 13:03:22.001"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>${Delay}</arg>
+</arguments>
+<msg timestamp="20190513 13:03:27.003" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20190513 13:03:22.001" endtime="20190513 13:03:27.003"></status>
+</kw>
+<kw name="Enter Password" library="Login_page">
+<kw name="Input Password" library="SeleniumLibrary">
+<doc>Types the given password into text field identified by ``locator``.</doc>
+<arguments>
+<arg>xpath=//div[@id='password']//input[@type='password']</arg>
+<arg>${Password}</arg>
+</arguments>
+<msg timestamp="20190513 13:03:27.005" level="INFO">Typing password into text field 'xpath=//div[@id='password']//input[@type='password']'.</msg>
+<status status="PASS" starttime="20190513 13:03:27.004" endtime="20190513 13:03:27.189"></status>
+</kw>
+<status status="PASS" starttime="20190513 13:03:27.004" endtime="20190513 13:03:27.189"></status>
+</kw>
+<kw name="Click Login" library="Login_page">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>id=passwordNext</arg>
+</arguments>
+<msg timestamp="20190513 13:03:27.190" level="INFO">Clicking element 'id=passwordNext'.</msg>
+<status status="PASS" starttime="20190513 13:03:27.190" endtime="20190513 13:03:27.323"></status>
+</kw>
+<status status="PASS" starttime="20190513 13:03:27.190" endtime="20190513 13:03:27.323"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>${Delay}</arg>
+</arguments>
+<msg timestamp="20190513 13:03:32.326" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20190513 13:03:27.324" endtime="20190513 13:03:32.326"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>The text is ${response}</arg>
+</arguments>
+<status status="PASS" starttime="20190513 13:03:32.326" endtime="20190513 13:03:32.327"></status>
+</kw>
+<kw name="Assert Error Message" library="Login_page">
+<kw name="Should Be Equal As Strings" library="BuiltIn">
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<arguments>
+<arg>${response}</arg>
+<arg>${DashboardTitle}</arg>
+</arguments>
+<msg timestamp="20190513 13:03:32.328" level="FAIL">Get Text xpath=//h1[text() = 'Welcome, robot framework'] != Welcome, robot framework</msg>
+<status status="FAIL" starttime="20190513 13:03:32.328" endtime="20190513 13:03:32.328"></status>
+</kw>
+<status status="FAIL" starttime="20190513 13:03:32.328" endtime="20190513 13:03:32.328"></status>
+</kw>
+<status status="FAIL" starttime="20190513 13:02:55.843" endtime="20190513 13:03:32.329" critical="yes">Get Text xpath=//h1[text() = 'Welcome, robot framework'] != Welcome, robot framework</status>
+</test>
+<doc>A resource file with reusable keywords and variables.
+
+The system specific keywords created here form our own
+domain specific language. They utilize keywords provided
+by the imported SeleniumLibrary.</doc>
+<status status="FAIL" starttime="20190513 13:02:55.497" endtime="20190513 13:03:32.332"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1">Critical Tests</stat>
+<stat pass="0" fail="1">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" id="s1" name="Config">Config</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
